@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+header h1{
+color: #EEEEEE;
+}
+header p{
+color: #EEEEEE;
+font-weight: 700;
+opacity: 0.6;
+}
+header span{
+color: #00ADB5;
+opacity: 1;
+}
+
+.cardContainer {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1023px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
